@@ -9,8 +9,21 @@ html {
 	/*Image only BG fallback*/
 	
 	/*background = gradient + image pattern combo*/
-	background: 
-		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+	/* background: #FFF5EE; */
+	/* background: #DE5D83;  */
+		/* linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6)); */
+		/* background-color: #f5f4f2;
+    background-image: linear-gradient(315deg, #f5f4f2 0%, #ff4081 74%); */
+
+    /* OPTION 1 - top: seashell to bottom: pink */
+    /* background: rgb(222,93,131);
+    background: linear-gradient(0deg, rgba(222,93,131,1) 0%, rgba(255,245,238,1) 100%); */
+    /* OPTION 2 - inner circle gradient of seashell color */
+    background: rgb(255,245,238);
+    background: radial-gradient(circle, rgba(255,245,238,1) 0%, rgba(222,93,131,1) 100%);
+    /* option 3 - white to pink - L->R */
+    /* background-color: #e96196;
+    background-image: linear-gradient(315deg, #e96196 0%, #ffffff 74%); */
 }
 
 body {
@@ -24,7 +37,7 @@ body {
 	position: relative;
 }
 #msform fieldset {
-	background: white;
+	background: #DE5D83;
 	border: 0 none;
 	border-radius: 3px;
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
@@ -49,15 +62,15 @@ body {
 	width: 100%;
 	box-sizing: border-box;
 	font-family: montserrat;
-	color: #2C3E50;
+	color: #DE5D83;
 	font-size: 13px;
 }
 /*buttons*/
 #msform .action-button {
 	width: 100px;
-	background: #27AE60;
+	background: #f191ae;
 	font-weight: bold;
-	color: white;
+	color: #FFF5EE;
 	border: 0 none;
 	border-radius: 1px;
 	cursor: pointer;
@@ -65,13 +78,13 @@ body {
 	margin: 10px 5px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+	box-shadow: 0 0 0 1px white, 0 0 0 3px #DE5D83;
 }
 /*headings*/
 .fs-title {
 	font-size: 15px;
 	text-transform: uppercase;
-	color: #2C3E50;
+	color: #FFF5EE;
 	margin-bottom: 10px;
 }
 .fs-subtitle {
@@ -104,7 +117,7 @@ body {
 	display: block;
 	font-size: 10px;
 	color: #333;
-	background: white;
+	background: #FFF5EE;
 	border-radius: 3px;
 	margin: 0 auto 5px auto;
 }
@@ -126,9 +139,10 @@ body {
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before,  #progressbar li.active:after{
-	background: #27AE60;
-	color: white;
+	background: #DE5D83;
+	color: #FFF5EE;
 }
 
-
-
+#progressbar li{
+	color: #DE5D83;
+}
